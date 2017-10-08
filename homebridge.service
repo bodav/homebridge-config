@@ -1,0 +1,24 @@
+# Goes in /etc/systemd/system/
+# sudo chmod -R 0777 /var/lib/homebridge
+# sudo systemctl daemon-reload
+# sudo systemctl enable homebridge
+# sudo systemctl start homebridge
+# systemctl status homebridge
+
+[Unit]
+Description=Node.js HomeKit Server
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+User=root / user
+EnvironmentFile=/etc/default/homebridge
+# Adapt this to your specific setup (could be /usr/bin/homebridge)
+# See comments below for more information
+ExecStart=/usr/bin/homebridge $HOMEBRIDGE_OPTS
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
