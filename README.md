@@ -1,3 +1,9 @@
+# Start
+
+```
+> homebridge --debug --insecure -U /home/pi/homebridge-config/
+```
+
 # Plugins
 
 * homebridge-zp

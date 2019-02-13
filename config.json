@@ -1,12 +1,12 @@
 {
     "bridge": {
         "name": "Homebridge",
-        "username": "CC:22:3D:E3:CE:32",
+        "username": "CC:23:3D:E3:CE:32",
         "port": 51826,
-        "pin": "131-45-155",
+        "pin": "132-45-155",
         "manufacturer": "bodav",
         "model": "Homebridge",
-        "serialNumber": "0.4.20"
+        "serialNumber": "0.4.21"
     },
 
     "description": "Homebridge",
@@ -26,8 +26,7 @@
     },
     {
         "platform": "ZP",
-        "service": "speaker",
-        "brightness": true
+        "service": "fan"
     },
     {
         "platform": "config",
