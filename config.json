@@ -16,9 +16,9 @@
     "platforms": [{
         "platform": "IFTTT",
         "name": "IFTTT",
-        "makerkey": "maker key goes here",
+        "makerkey": "",
         "accessories": [{
-                "name": "IFTTT Test",
+                "name": "IFTTT Webhook",
                 "buttons": [{
                     "trigger": "doorbell"
                 }]
@@ -26,9 +26,13 @@
     },
     {
         "platform": "ZP",
-        "name": "ZP",
-        "service": "light",
-        "brightness": true,
-        "speakers": false
+        "service": "speaker",
+        "brightness": true
+    },
+    {
+        "platform": "config",
+        "name": "Config",
+        "port": 8080,
+        "sudo": false
     }]
 }
