@@ -1,7 +1,7 @@
 # Start
 
 ```
-> homebridge --debug --insecure -U /home/pi/homebridge-config/
+> pm2 start homebridge -- -D -I -U /home/pi/homebridge/homebridge-config/ -P /home/pi/homebridge/plugins/
 ```
 
 # Plugins
