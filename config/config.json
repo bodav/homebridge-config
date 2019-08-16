@@ -12,6 +12,26 @@
             "name": "Sonos",
             "service": "fan",
             "platform": "ZP"
+        },
+        {
+            "platform": "Pushover",
+            "name": "Pushover",
+            "pushover": {
+                "user": "USER_TOKEN",
+                "token": "HOMEBRIDGE_APP_TOKEN"
+            },
+            "masterSwitch": {
+                "name": "PushoverMaster"
+            },
+            "switches": [
+                {
+                    "name": "Doorbell",
+                    "priority": "high"
+                },
+                {
+                    "name": "Test Pushover"
+                }
+            ]
         }
     ]
 }
