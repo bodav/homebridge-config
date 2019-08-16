@@ -2,21 +2,33 @@
 
 All the things needed to bootstrap my current homebridge setup
 
-# Prereq
-
-* Docker
-* Docker-compose
-
-See: link
-
 # Install
 
-TODO
+To install docker, docker-compose and homebridge see:  
+https://github.com/oznu/docker-homebridge/wiki/Homebridge-on-Raspberry-Pi
 
-# Run
+# Setup
 
-TODO
+### Clone
+
+```
+git clone <thisrepo> ~/homebridge or .
+```
+
+### Run
+
+```
+docker-compose up -d
+```
+
+### Logs
+
+```
+docker-compose logs -f
+```
 
 # Upgrade
 
-TODO
+```
+docker-compose pull homebridge
+```
