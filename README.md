@@ -1,12 +1,22 @@
-# Start
+# Homebridge Setup
 
-```
-> pm2 start homebridge -- -D -I -U /home/pi/homebridge/homebridge-config/ -P /home/pi/homebridge/plugins/
-```
+All the things needed to bootstrap my current homebridge setup
 
-# Plugins
+# Prereq
 
-* homebridge-zp
-* homebridge-ifttt
-* homebridge-config-ui-x
-* homebridge-doorbell
+* Docker
+* Docker-compose
+
+See: link
+
+# Install
+
+TODO
+
+# Run
+
+TODO
+
+# Upgrade
+
+TODO

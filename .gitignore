@@ -1,0 +1,8 @@
+config/accessories
+config/logs
+config/node_modules
+config/persist
+config/.*
+config/auth.json
+config/config.json.*
+config/startup.sh
