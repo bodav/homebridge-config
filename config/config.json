@@ -32,6 +32,19 @@
                     "name": "Test Pushover"
                 }
             ]
+        },
+        {
+            "platform": "HttpWebHooks",
+            "webhook_port": "51828",
+            "cache_directory": "/homebridge/.node-persist/storage",
+            "sensors": [
+                {
+                    "id": "doorbellSensor",
+                    "name": "Doorbell",
+                    "type": "motion",
+                    "autoRelease": true
+                }
+            ]
         }
     ]
 }
