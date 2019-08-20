@@ -1,5 +1,13 @@
-version: '2'
+version: "3"
 services:
+  quhwa-gpio:
+    build: https://github.com/bodav/node-quhwa-gpio.git
+    network_mode: host
+    volumes:
+      - /sys:/sys
+    environment:
+      - GPIOPIN=7
+      - "WEBHOOKURL=http://localhost:51828/?accessoryId=doorbellSensor&state=true"
   homebridge:
     image: oznu/homebridge:no-avahi-arm32v6
     restart: always
