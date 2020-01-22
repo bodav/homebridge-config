@@ -2,6 +2,7 @@ version: "3"
 services:
   quhwa-gpio:
     build: https://github.com/bodav/node-quhwa-gpio.git
+    restart: always
     network_mode: host
     volumes:
       - /sys:/sys
